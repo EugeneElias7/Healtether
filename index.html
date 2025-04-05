@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healtether</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <img src="assets/images/logo.png" alt="HealTether Logo" class="logo">
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact</a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Make your clinic Fast, Smart and Secure</h1>
+                <p class="subtitle">Designed to easily integrate into your flow and increase efficiency, so you can focus on what matters most to you, your patients!</p>
+                <a href="#signup" class="btn">Sign Up</a>
+            </div>
+            <div class="header-image">
+                <img src="assets/images/hero-image.png" alt="Clinic Management System">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Features Section -->
+    <section class="feature-section">
+        <div class="yellow-bg">
+            <div>
+                <h2 class="section-title">For Individual Practitioners, Clinics and Hospitals</h2>
+                <h3 class="section-subtitle">Introducing HealTether, an AI based Clinical Support Tool</h3>
+                <p>FAST, SMART & SECURE</p>
+                <p>Digital Prescriptions Powered by AI</p>
+                <p>HealTether learns from your daily practice, suggests diagnoses, treatment guidelines and even auto-fills routine prescriptions.</p>
+            </div>
+            <img src="assets/images/ai-prescription.gif" alt="AI Prescription System">
+        </div>
+    </section>
+
+    <!-- WhatsApp Integrated Section -->
+    <section class="whatsapp-section">
+        <div class="whatsapp-container">
+            <div>
+                <h2 class="section-title">WhatsApp Integrated</h2>
+                <p>Patients can ask their queries to your staff, have virtual consultations get follow-up and medication reminders all without leaving WhatsApp while your number stays private.</p>
+            </div>
+            <img src="assets/images/whatsapp-integration.gif" alt="WhatsApp Integration">
+        </div>
+    </section>
+
+    <!-- Streamlined Appointment Section -->
+    <section class="appointment-section">
+        <div class="appointment-container">
+            <img src="assets/images/appointment-management.gif" alt="Appointment Management">
+            <div>
+                <h2 class="section-title">Streamlined Appointment Management</h2>
+                <p>Effortlessly schedule, cancel, and reschedule appointments with our user-friendly interface. A unified dashboard to manage your offline and online appointments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Management Section -->
+    <section class="feature-section">
+        <div class="staff-management">
+            <div>
+                <h2 class="section-title">Staff Management</h2>
+                <p>Role-based Access Control: Granular access controls ensure only authorised personnel can access specific data.</p>
+            </div>
+            <img src="assets/images/staff-management.gif" alt="Staff Management Dashboard">
+        </div>
+    </section>
+
+    <!-- Rotating Features Section -->
+    <section class="rotating-features">
+        <div class="rotator-container">
+            <div class="feature-slide active">
+                <div class="slide-content">
+                    <h2>VIRTUAL CONSULTATION</h2>
+                    <p>Your patients need not download an app to consult you virtually. Make your practice tele-medicine capable at 0% commission cost.</p>
+                </div>
+                <div class="slide-image">
+                    <img src="assets/images/virtual-consultation.png" alt="Virtual Consultation">
+                </div>
+            </div>
+            <div class="feature-slide">
+                <div class="slide-content">
+                    <h2>MOBILE FIRST APPROACH</h2>
+                    <p>Designed for mobile devices first, ensuring seamless experience for both doctors and patients on any device.</p>
+                </div>
+                <div class="slide-image">
+                    <img src="assets/images/mobile-first.png" alt="Mobile First">
+                </div>
+            </div>
+            <div class="feature-slide">
+                <div class="slide-content">
+                    <h2>DATA-DRIVEN INSIGHTS</h2>
+                    <p>Get powerful analytics about your practice performance, patient trends, and financial metrics.</p>
+                </div>
+                <div class="slide-image">
+                    <img src="assets/images/data-analytics.png" alt="Data Analytics">
+                </div>
+            </div>
+            <div class="feature-slide">
+                <div class="slide-content">
+                    <h2>BILLING</h2>
+                    <p>Comprehensive billing solutions that integrate with your practice management seamlessly.</p>
+                </div>
+                <div class="slide-image">
+                    <img src="assets/images/billing-system.png" alt="Billing System">
+                </div>
+            </div>
+            <div class="rotator-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="signup">
+        <div class="cta-content">
+            <div class="cta-text">
+                <h2>Sign Up for Early Access to our AI enabled Practice Management Application Now</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Enter Your Mobile Number" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Speciality</option>
+                                <option>General Physician</option>
+                                <option>Dentist</option>
+                                <option>Cardiologist</option>
+                                <option>Dermatologist</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+            <div class="cta-image">
+                <img src="assets/images/pinkpattern.png" alt="pattern">
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <h2 class="section-title">Our Supporters</h2>
+        <div class="partners-slider">
+            <div class="slider-track">
+                <img src="assets/images/DERBI.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/nvidia-inception.jpeg" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/Pilani.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/PSG.png" alt="SRI RAMACHANDRI" class="partner-logo">
+                <img src="assets/images/startup-india-hub.png" alt="StartupTM" class="partner-logo">
+                <img src="assets/images/Startuptn-logo.png" alt="Partner 1" class="partner-logo">
+                <img src="assets/images/Wadhwani-Foundation-Logo 1.png" alt="Partner 2" class="partner-logo">
+                <img src="assets/images/google.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/new-sriher-logo.png" alt="Google for Startups" class="partner-logo">
+                //loop for infinite scrolling
+                <img src="assets/images/DERBI.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/nvidia-inception.jpeg" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/Pilani.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/PSG.png" alt="SRI RAMACHANDRI" class="partner-logo">
+                <img src="assets/images/startup-india-hub.png" alt="StartupTM" class="partner-logo">
+                <img src="assets/images/Startuptn-logo.png" alt="Partner 1" class="partner-logo">
+                <img src="assets/images/Wadhwani-Foundation-Logo 1.png" alt="Partner 2" class="partner-logo">
+                <img src="assets/images/google.png" alt="Google for Startups" class="partner-logo">
+                <img src="assets/images/new-sriher-logo.png" alt="Google for Startups" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="assets/images/logo.png" alt="HealTether Logo" class="footer-logo">
+                <p>Join us on this transformative journey as we redefine healthcare together.</p>
+                <div class="app-badges">
+                    <img src="assets/images/play store.png" alt="Google Play" class="app-badge">
+                    <img src="assets/images/appleStore.png" alt="App Store" class="app-badge">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:hello@healtether.com">hello@healtether.com</a></li>
+                    <li><a href="tel:+917853040929">+91-7853040929</a></li>
+                    <li>No.12(2) Veerazhagamman Street<br>Bodinayakanur, Theni, Tamil Nadu<br>Pincode - 625513</li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h3>Get regular updates in your inbox</h3>
+                <input type="email" placeholder="example@gmail.com" id="newsletter-email">
+                <button type="button" class="btn" id="newsletter-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#"><img src="assets/images/privacy-policy.png" alt="Privacy Policy"></a>
+            <p>© Copyright 2025 HealTether. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

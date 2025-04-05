@@ -1,0 +1,533 @@
+:root {
+  --primary: #ffc5ff;
+  --secondary: #1a365d;
+  --accent: #4fd1c5;
+  --light: #f7fafc;
+  --dark: #1a202c;
+  --pink-bg: #fff0f6;
+  --yellow-bg: #fff9db;
+  --light-pink: #fff5f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: #fff;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Top Navigation */
+.top-nav {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.login-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
+
+/* Header/Hero Section */
+header {
+  background: var(--pink-bg);
+  color: var(--dark);
+  padding: 8rem 1rem 4rem;
+  margin-top: 60px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header-text {
+  z-index: 2;
+}
+
+.header-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary);
+}
+
+/* Features Section */
+.feature-section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.yellow-bg {
+  background-color: var(--yellow-bg);
+  border-radius: 15px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.yellow-bg img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* WhatsApp Integrated Section */
+.whatsapp-section {
+  background-color: white;
+  padding: 4rem 1rem;
+}
+
+.whatsapp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.whatsapp-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Streamlined Appointment Section */
+.appointment-section {
+  background-color: var(--light-pink);
+  padding: 4rem 1rem;
+}
+
+.appointment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.appointment-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Staff Management Section */
+.staff-management {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+.staff-management img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Rotating Features Section */
+.rotating-features {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rotator-container {
+  position: relative;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.feature-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.feature-slide.active {
+  opacity: 1;
+}
+
+.slide-content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0,0,0,0.7);
+  color: white;
+}
+
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rotator-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--pink-bg);
+  padding: 4rem 1rem;
+}
+
+.cta-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.cta-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Partners Section */
+.partners {
+  padding: 3rem 1rem;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.partners-slider {
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.slider-track {
+  display: flex;
+  animation: slide 20s linear infinite;
+  width: calc(200px * 10);
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-200px * 5)); }
+}
+
+.partner-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 20px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.app-badges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.app-badge {
+  height: 40px;
+  width: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2d3748;
+  color: #a0aec0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright img {
+  height: 20px;
+  width: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .header-image img,
+  .yellow-bg img,
+  .whatsapp-container img,
+  .appointment-container img,
+  .cta-image img {
+      height: 250px;
+  }
+  
+  .staff-management img {
+      height: 300px;
+  }
+  
+  .rotator-container {
+      height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content,
+  .yellow-bg,
+  .whatsapp-container,
+  .appointment-container,
+  .staff-management,
+  .cta-content,
+  .feature-slide {
+      grid-template-columns: 1fr;
+  }
+  
+  .header-image,
+  .whatsapp-container img,
+  .appointment-container img,
+  .cta-image,
+  .slide-image {
+      order: -1;
+  }
+  
+  .header-image img,
+  .yellow-bg img,
+  .whatsapp-container img,
+  .appointment-container img,
+  .cta-image img {
+      height: 200px;
+  }
+  
+  .staff-management img {
+      height: 250px;
+  }
+  
+  .rotator-container {
+      height: 300px;
+  }
+  
+  .slide-content {
+      padding: 2rem;
+  }
+  
+  .partner-logo {
+      height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-image img,
+  .yellow-bg img,
+  .whatsapp-container img,
+  .appointment-container img,
+  .cta-image img {
+      height: 180px;
+  }
+  
+  .rotator-container {
+      height: 250px;
+  }
+  
+  .form-row {
+      flex-direction: column;
+  }
+} 
